@@ -29,5 +29,14 @@ int main()
     {
         cout << "Orszag:" << orszagok[i].nev << " Belepes eve:" << orszagok[i].belepes << endl ;
     }
+    cout << "3. feladat" << endl ;
+    cout << "2000 utan csatlakozo orszagok:" << endl ;
+    for (int i = 0 ; i < sor ; i++)
+    {
+        if (orszagok[i].belepes >=2000)
+        {
+            cout << "\t" << orszagok[i].nev << endl ;
+        }
+    }
     return 0;
 }
