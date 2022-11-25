@@ -47,5 +47,12 @@ int main()
         }
     }
     cout << "Legkorabbi ev:" << min << endl ;
+    int j = 0 ;
+    cout << "4. feladat" << endl ;
+    while(j < sor && !(orszagok[j].nev=="Magyarorszag"))
+    {
+        j++ ;
+    }
+    cout << "Magyarorszag csatlakozasi datuma:" << orszagok[j].belepes << endl ;
     return 0;
 }
