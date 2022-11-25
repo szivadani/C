@@ -38,5 +38,14 @@ int main()
             cout << "\t" << orszagok[i].nev << endl ;
         }
     }
+    int min = 2023 ;
+    for (int i = 0 ; i < sor ; i++)
+    {
+        if (orszagok[i].belepes < min)
+        {
+            min = orszagok[i].belepes ;
+        }
+    }
+    cout << "Legkorabbi ev:" << min << endl ;
     return 0;
 }
